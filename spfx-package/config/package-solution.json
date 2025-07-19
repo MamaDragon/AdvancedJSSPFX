@@ -1,0 +1,48 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "advanced-js-features-client-side-solution",
+    "id": "12345678-1234-1234-1234-123456789012",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": false,
+    "isDomainIsolated": false,
+    "webApiPermissionRequests": [],
+    "developer": {
+      "name": "Advanced JavaScript Assignment",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": ""
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Advanced JavaScript Features web part demonstrating modern ES6+ concepts"
+      },
+      "longDescription": {
+        "default": "A comprehensive SharePoint Framework web part showcasing advanced JavaScript features including WeakMap, Type Guards, Proxy with Reflect, Set, Symbol, Generators, Iterators, and RxJS observables."
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+        "categories": [
+        "Productivity"
+      ]
+    },
+    "features": [
+      {
+        "title": "Advanced JavaScript Features",
+        "description": "Demonstrates modern JavaScript concepts in SharePoint",
+        "id": "12345678-1234-1234-1234-123456789013",
+        "version": "1.0.0.0",
+        "assets": {
+          "elementManifests": [
+            "elements.xml"
+          ]
+        }
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/advanced-js-features.sppkg"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/spfx-serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "initialPage": "https://yourtenant.sharepoint.com/sites/yoursite/_layouts/15/workbench.aspx",
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://yourtenant.sharepoint.com/sites/yoursite/_layouts/15/workbench.aspx"
+    },
+    "marketing": {
+      "pageUrl": "https://yourtenant.sharepoint.com/sites/marketing/_layouts/15/workbench.aspx"
+    },
+    "hr": {
+      "pageUrl": "https://yourtenant.sharepoint.com/sites/hr/_layouts/15/workbench.aspx"
+    },
+    "projects": {
+      "pageUrl": "https://yourtenant.sharepoint.com/sites/projects/_layouts/15/workbench.aspx"
+    },
+    "intranet": {
+      "pageUrl": "https://yourtenant.sharepoint.com/sites/intranet/_layouts/15/workbench.aspx"
+    },
+    "teams": {
+      "pageUrl": "https://yourtenant.sharepoint.com/sites/teams/_layouts/15/workbench.aspx"
+    },
+    "communication": {
+      "pageUrl": "https://yourtenant.sharepoint.com/sites/news/_layouts/15/workbench.aspx"
+    }
+  }
+}

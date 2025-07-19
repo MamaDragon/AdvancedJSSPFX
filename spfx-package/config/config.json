@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "advanced-js-features-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/advancedJsFeatures/AdvancedJsFeaturesWebPart.js",
+          "manifest": "./src/webparts/advancedJsFeatures/AdvancedJsFeaturesWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "AdvancedJsFeaturesWebPartStrings": "lib/webparts/advancedJsFeatures/loc/{locale}.js"
+  }
+}

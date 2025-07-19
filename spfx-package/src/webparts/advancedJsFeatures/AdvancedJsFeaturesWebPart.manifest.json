@@ -1,0 +1,22 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "12345678-1234-1234-1234-123456789014",
+  "alias": "AdvancedJsFeaturesWebPart",
+  "componentType": "WebPart",
+  "version": "*",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart", "TeamsPersonalApp", "TeamsTab", "SharePointFullPage"],
+  "supportsThemeVariants": true,
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+    "group": { "default": "Under Development" },
+    "title": { "default": "Advanced JavaScript Features" },
+    "description": { "default": "Demonstrates modern JavaScript concepts including WeakMap, Type Guards, Proxy, Generators, and more" },
+    "officeFabricIconFontName": "Code",
+    "properties": {
+      "title": "Advanced JavaScript Features",
+      "description": "Demonstrating modern JavaScript patterns and techniques"
+    }
+  }]
+}

@@ -1,0 +1,46 @@
+{
+  "name": "advanced-js-spfx-webpart",
+  "version": "0.0.1",
+  "private": true,
+  "engines": {
+    "node": ">=16.0.0 <19.0.0"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "gulp bundle",
+    "clean": "gulp clean",
+    "test": "gulp test",
+    "serve": "npx gulp serve",
+    "serve:marketing": "npx gulp serve --config marketing",
+    "serve:hr": "npx gulp serve --config hr",
+    "serve:projects": "npx gulp serve --config projects",
+    "serve:intranet": "npx gulp serve --config intranet",
+    "serve:teams": "npx gulp serve --config teams",
+    "serve:communication": "npx gulp serve --config communication",
+    "build:production": "npx gulp bundle --ship && npx gulp package-solution --ship",
+    "package": "npx gulp package-solution",
+    "deploy:tenant": "echo 'Upload sharepoint/solution/*.sppkg to https://yourtenant.sharepoint.com/sites/appcatalog'",
+    "deploy:help": "echo 'Run npm run build:production first, then upload the .sppkg file to your SharePoint App Catalog'"
+  },
+  "dependencies": {
+    "@microsoft/sp-core-library": "1.17.4",
+    "@microsoft/sp-lodash-subset": "1.17.4",
+    "@microsoft/sp-office-ui-fabric-core": "^1.17.4",
+    "@microsoft/sp-property-pane": "1.17.4",
+    "@microsoft/sp-webpart-base": "1.17.4",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "@microsoft/rush-stack-compiler-4.5": "^0.5.1",
+    "@microsoft/sp-build-web": "1.17.4",
+    "@microsoft/sp-module-interfaces": "1.17.4",
+    "@microsoft/sp-tslint-rules": "1.17.4",
+    "@types/react": "17.0.45",
+    "@types/react-dom": "17.0.17",
+    "@types/webpack-env": "1.17.0",
+    "gulp": "4.0.2",
+    "typescript": "4.7.4"
+  }
+}

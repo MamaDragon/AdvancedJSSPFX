@@ -1,0 +1,235 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+//@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/office-ui-fabric-core.scss';
+
+.advanced-js-features {
+  padding: 20px;
+  background-color: $ms-color-white;
+  
+  .navigation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: $ms-color-neutralLighter;
+    border-radius: 8px;
+    
+    .nav-btn {
+      padding: 8px 16px;
+      border: 1px solid $ms-color-neutralSecondary;
+      background-color: $ms-color-white;
+      color: $ms-color-neutralPrimary;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-weight: 600;
+      
+      &:hover {
+        background-color: $ms-color-neutralLighter;
+        border-color: $ms-color-themePrimary;
+      }
+      
+      &.active {
+        background-color: $ms-color-themePrimary;
+        color: $ms-color-white;
+        border-color: $ms-color-themePrimary;
+      }
+    }
+  }
+  
+  .content {
+    background-color: $ms-color-white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.home-container {
+  .hero-section {
+    text-align: center;
+    background: linear-gradient(135deg, $ms-color-themePrimary 0%, $ms-color-themeSecondary 100%);
+    color: $ms-color-white;
+    padding: 40px 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      font-weight: 300;
+    }
+    
+    p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      margin: 0;
+    }
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .feature-card {
+    background-color: $ms-color-white;
+    border: 1px solid $ms-color-neutralLight;
+    border-radius: 8px;
+    padding: 24px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      border-color: $ms-color-themePrimary;
+    }
+    
+    h3 {
+      color: $ms-color-neutralPrimary;
+      margin-bottom: 12px;
+      font-size: 1.3rem;
+    }
+    
+    p {
+      color: $ms-color-neutralSecondary;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+    
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      display: inline-block;
+      
+      &.btn-primary {
+        background-color: $ms-color-themePrimary;
+        color: $ms-color-white;
+        
+        &:hover {
+          background-color: $ms-color-themeDark;
+        }
+      }
+      
+      &.btn-success {
+        background-color: $ms-color-green;
+        color: $ms-color-white;
+        
+        &:hover {
+          background-color: $ms-color-greenDark;
+        }
+      }
+      
+      &.btn-info {
+        background-color: $ms-color-teal;
+        color: $ms-color-white;
+        
+        &:hover {
+          background-color: $ms-color-tealDark;
+        }
+      }
+      
+      &.btn-warning {
+        background-color: $ms-color-orange;
+        color: $ms-color-white;
+        
+        &:hover {
+          background-color: $ms-color-orange;
+        }
+      }
+    }
+  }
+  
+  .spfx-info {
+    background-color: $ms-color-neutralLighter;
+    border: 1px solid $ms-color-neutralLight;
+    border-radius: 8px;
+    padding: 24px;
+    
+    h4 {
+      color: $ms-color-neutralPrimary;
+      margin-bottom: 16px;
+      font-size: 1.4rem;
+    }
+    
+    p {
+      color: $ms-color-neutralSecondary;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+    
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      
+      li {
+        color: $ms-color-neutralSecondary;
+        padding: 4px 0;
+        position: relative;
+        padding-left: 20px;
+        
+        &:before {
+          content: '✓';
+          color: $ms-color-green;
+          font-weight: bold;
+          position: absolute;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+// Responsive design
+@media (max-width: 768px) {
+  .advanced-js-features {
+    padding: 10px;
+    
+    .navigation {
+      .nav-btn {
+        flex: 1;
+        min-width: 80px;
+      }
+    }
+    
+    .content {
+      padding: 15px;
+    }
+  }
+  
+  .home-container {
+    .hero-section {
+      padding: 30px 15px;
+      
+      h1 {
+        font-size: 2rem;
+      }
+      
+      p {
+        font-size: 1rem;
+      }
+    }
+    
+    .features-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .feature-card {
+      padding: 20px;
+    }
+    
+    .spfx-info {
+      padding: 20px;
+    }
+  }
+}
